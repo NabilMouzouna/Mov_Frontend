@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.overlay::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(9, 9, 34, 0.077);
+}
+
+.skeleton-loader {
+    background: linear-gradient(90deg, transparent 25%, #f3f3f3 50%, transparent 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s ease-in infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
