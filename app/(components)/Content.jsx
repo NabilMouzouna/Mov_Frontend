@@ -15,7 +15,7 @@ const Main = () => {
   useEffect(() => {
      const getDocuments =async () => { 
       try {
-       const res = await axios.get(`http://localhost:8080${pathname}?filterBy=${filterBy}&sortBy=${sortBy}&page=${page}`)
+       const res = await axios.get(`https://mov-dixe.onrender.com${pathname}?filterBy=${filterBy}&sortBy=${sortBy}&page=${page}`)
        if(res.data.length === 0) {setPage(1)}
         setDocs(res.data)
       } catch (error) {
